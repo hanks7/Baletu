@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:background="@drawable/shape_radiu_gray"
+    android:gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint="搜索"
+        android:drawablePadding="@dimen/default_margin"
+        android:drawableLeft="@mipmap/cp_ic_search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/cp_gray_deep"
+        android:textColorHint="@color/cp_gray"
+        android:textCursorDrawable="@drawable/curson"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/iv_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@mipmap/cp_ic_search_clear"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

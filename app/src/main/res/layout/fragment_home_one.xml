@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hopeshine.taoxue.ui.module.home.HomeOneFragment">
+
+    <com.hopeshine.taoxue.ui.view.TranslucentScrollView
+        android:id="@+id/fa_home_fg_shunfeng_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/fa_home_convenientBanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <com.hopeshine.taoxue.ui.view.toppicLayoutView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_margin" />
+
+            <com.hopeshine.taoxue.ui.view.UPMarqueeView
+                android:id="@+id/upview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+        </LinearLayout>
+    </com.hopeshine.taoxue.ui.view.TranslucentScrollView>
+
+    <com.hopeshine.taoxue.ui.view.TranslucentActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pop_text="资源"
+        app:search_text="请输入资源名称" />
+</RelativeLayout>

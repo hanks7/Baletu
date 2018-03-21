@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp">
+
+    <LinearLayout
+        android:id="@+id/classification_e_book"
+        style="@style/classification_RadioButton"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            style="@style/classification_RadioButton"
+            android:src="@mipmap/ic_img_huibend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="读绘本" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classification_video"
+        style="@style/classification_RadioButton"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            style="@style/classification_RadioButton"
+            android:src="@mipmap/ic_img_sjiangushid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="讲故事" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classification_audio"
+        style="@style/classification_RadioButton"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            style="@style/classification_RadioButton"
+            android:src="@mipmap/ic_img_zhuanti" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="专题" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classification_picture"
+        style="@style/classification_RadioButton"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+
+            style="@style/classification_RadioButton"
+            android:src="@mipmap/ic_img_fenleid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="分类" />
+    </LinearLayout>
+
+
+</LinearLayout>
